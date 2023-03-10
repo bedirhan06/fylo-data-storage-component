@@ -1,31 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <section class="file-actions">
+          <img
+            class="logo"
+            width="135"
+            height="40"
+            src="images/logo.svg"
+            alt="fylo logo"
+          />
+          <div class="actions">
+            <div class="document">
+              <img
+                width="20"
+                height="24"
+                src="images/icon-document.svg"
+                alt="document"
+              />
+            </div>
 
-  You’ve used 815 GB of your storage
+            <div class="folder">
+              <img
+                width="24"
+                height="20"
+                src="images/icon-folder.svg"
+                alt="folder"
+              />
+            </div>
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <div class="upload">
+              <img
+                width="24"
+                height="16"
+                src="images/icon-upload.svg"
+                alt="upload"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="storage-info">
+          <div class="description">
+            You’ve used
+            <b>815 GB</b>
+            of your storage
+          </div>
+
+          <div class="bar">
+            <div class="progress">
+              <div class="thumb"></div>
+            </div>
+          </div>
+
+          <div class="range">
+            <b class="start">0 GB</b>
+            <b class="end">1000 GB</b>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
